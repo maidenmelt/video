@@ -1,0 +1,32 @@
+app:
+  name: "Video Analyser"
+  version: "0.1.0"
+
+pipeline:
+  extract_audio: true
+  run_asr: true
+  run_diarization: true
+  run_cv: false
+  run_llm: true
+  run_metadata: true
+
+output:
+  dir: "./data/reports"
+  format: "json"
+
+video:
+  audio_sample_rate: 16000
+  audio_channels: 1
+
+metadata:
+  required_fields:
+    - appointment_date
+    - patient
+    - doctor_name
+    - clinic
+  optional_fields:
+    - view_date
+    - month
+    - auditor_name
+    - doctor_id
+    - schedule
