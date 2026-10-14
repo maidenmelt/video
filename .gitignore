@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+build/
+dist/
+
+# Кэш
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Окружение
+.env
+.env.local
+
+# Данные
+data/videos/
+data/transcripts/
+data/frames/
+data/reports/
+*.mp4
+*.wav
+*.mp3
+
+# IDE
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Логи
+*.log
+logs/
+
+# Модели
+models/
+*.pt
+*.bin
+*.safetensors
